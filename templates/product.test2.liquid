@@ -13,11 +13,23 @@
     - ${{ product.price | divided_by: 100 }}
   </p>
   0
-{% if product.vendor == 'Nike2' -%}
-  TEXTO
-  
-{% endif -%}
-  1
+TEST1:
+{% if product.vendor == 'Nike2' %}
+  <h1>{{ product.title }}</h1>
+{% endif %}
+TEST2:
+{%- if product.vendor == 'Nike2' -%}
+  <h1>{{ product.title }}</h1>
+{%- endif -%}
+TEST3:
+{% if product.vendor == 'Nike2' %}
+  <h1>{{ product.title }}</h1>
+{%- endif %}
+TEST4:
+{%- if product.vendor == 'Nike2' %}
+  <h1>{{ product.title }}</h1>
+{% endif %}
+
   
 
 
