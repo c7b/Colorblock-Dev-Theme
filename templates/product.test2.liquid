@@ -15,9 +15,8 @@
   
 <div class="product_badge">MetaTag (extra_description):{{ product.metafields.custom.extra_description }}</div>
   
-  {% if product.metafields.custom.isNew == true %}
-Soy nuevo
-    {% endif %}
+  
+  {% if product.metafields.my_fields.personalization.isNew == true %} hidden{% endif %}
   
 
 
