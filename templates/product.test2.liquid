@@ -15,10 +15,10 @@
   
 <div class="product_badge">MetaTag (extra_description):{{ product.metafields.custom.extra_description }}</div>
   
-  {% if product.metafields.my_fields.personalization.new == true %} 
+  {% if product.metafields.custom.new == true %} 
   New Product
     {% endif %}
-      {% if product.metafields.my_fields.personalization.new == false %} 
+      {% if product.metafields.custom.new == false %} 
   NOT NEW
     {% endif %}
   
